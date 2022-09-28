@@ -1,0 +1,85 @@
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --brown-color: #6E6E73;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CSS IN GENERAL */
+.none-underline {
+    text-decoration: none;
+}
+
+/* HEADER */
+
+.header {
+    font-size: 1.2rem;
+    color: var(--white-color);
+    padding: 1.4rem;
+    margin: 0;
+    background-color: #313132;
+    display: flex;
+    align-content: space-around;
+}
+
+.nav-items {
+    text-decoration: none;
+    color: var(--white-color);
+    /* damn cant use flexbox here */
+    /* padding: 0 2rem; */
+    align-items: center;
+}
+
+.nav-icons  {
+    color: var(--white-color);
+    font-size: 1.4rem;
+    /* padding: 0 2rem; */
+}
+
+/* SECTION */
+
+.header-content {
+    font-size: 3rem;
+}
+
+.header-details {
+    color: var(--brown-color);
+}
+
+.section-nav-row {
+    display: flex;
+    align-content: space-between;
+    list-style: none;
+}
+
+.nav-row {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.section-nav-devices-list {
+    display: flex;
+}
+
+.device-photo {
+    height: 7rem;
+}
+
+/* MAIN */
+
+.top-devices-intro {
+    display: flex;
+}
