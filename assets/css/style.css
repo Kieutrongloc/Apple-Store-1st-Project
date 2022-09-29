@@ -18,9 +18,23 @@ html {
 }
 
 /* CSS IN GENERAL */
+
 .none-address-style {
     text-decoration: none;
     list-style: none;
+}
+
+.border-radius-shadow {
+    border-radius: 16px;
+    box-shadow: 0 0 10px 0.1px #d9d9d9;
+}
+
+.hover-style {
+    transition: transform .5s ease;
+}
+
+.hover-style:hover {
+    transform: scale(1.01);
 }
 
 /* HEADER */
@@ -148,7 +162,7 @@ html {
     padding: 0 0 54px;
 }
 
-.top-devices-intro-sentence {
+.main-header {
     font-size: 28px;
     display: block;
     padding: 0 0 36px;
@@ -188,9 +202,90 @@ html {
     font-size: 17px;
 }
 
-.intro-items-img {
-    border-radius: 16px;
+/* Main second support */
+
+.support-detail-nav {
+    display: flex;
+    position: relative;
+    padding: 0 0 54px;
 }
 
+.support-detail-nav-item-intro,
+.nav-items-col-intro {
+    position: absolute;
+    color: var(--black-color);
+}
+
+.detail-nav-items-col {
+    padding: 0 14px 12px 14px;
+    display: inline-block;
+}
+
+.support-detail-nav-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.support-detail-nav-item-intro {
+    padding: 54px 50px 0px 40px;
+    max-width: 480px;
+}
+
+.nav-items-col-intro {
+    font-size: 24px;
+    padding: 55px 50px 0px 30px;
+    max-width: 480px;
+}
+
+.nav-item-col-intro-left {
+    max-width: 305px;
+}
+
+/* Main third store */
+
+/* Main fourth accessories */
+
+
+.fourth-accessories-nav {
+    display: flex;
+    position: relative;
+}
+
+.accessories-nav-item {
+    position: relative;
+    display: block;
+
+}
+
+.accessories-nav-item-header,
+.accessories-nav-item-detail {
+    position: absolute;
+}
+/* .accessories-nav-item-header,
+.accessories-nav-item-detail,
+.nav-item-color,
+.nav-item-accessories-status,
+.accessories-nav-item-name,
+.accessories-nav-item-price {
+    position: absolute;
+} */
+
+.accessories-nav-item-header {
+    font-size: 28px;
+}
+
+.accessories-nav-item-img {
+    padding-top: 41px;
+}
+
+.nav-item-color-dot {
+    float: right;
+    list-style: none;
+    height: 12px;
+}
+
+.color-dot-img {
+    height: 12px;
+}
 
 /* footer nav */
