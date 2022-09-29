@@ -248,18 +248,18 @@ html {
 
 .fourth-accessories-nav {
     display: flex;
+}
+
+.fourth-accessories-nav-box {
     position: relative;
+}
+
+.accessories-nav-item-main {
+    position: absolute;
 }
 
 .accessories-nav-item {
-    position: relative;
-    display: block;
-
-}
-
-.accessories-nav-item-header,
-.accessories-nav-item-detail {
-    position: absolute;
+     ;
 }
 /* .accessories-nav-item-header,
 .accessories-nav-item-detail,
