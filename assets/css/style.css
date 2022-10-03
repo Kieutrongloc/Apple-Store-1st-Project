@@ -44,13 +44,14 @@ html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--white-color);
     padding: 8px;
-    margin: 0;
+    margin: -26px 0px 0px 0px;
     background-color: #313132;
 }
 
 #header-nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 1000px;
 }
 
 .nav-items {
@@ -75,8 +76,8 @@ html {
 
 .section-nav-row {
     display:flex;
-    justify-content: space-around;
-    padding: 4rem 4rem;
+    justify-content: space-between;
+    padding: 4rem 4rem 4rem 0rem;
 }
 
 .header-content {
@@ -124,7 +125,7 @@ html {
 }
 
 .device-photo {
-    height: 7rem;
+    height: 78px;
 }
 
 /* Second section */
@@ -243,7 +244,34 @@ html {
 
 /* Main third store */
 
-/* Main fourth accessories */
+.main-third-store-nav {
+    display: flex;
+}
+
+.third-store-nav-item {
+    display: block;
+    padding: 30px;
+    position: relative;
+    margin: 0px 20px 54px 0px;
+}
+
+.store-nav-item-detail {
+    max-width: 253px;
+    position: absolute;
+    top: 100px;
+    font-size: 24px;
+    color: var(--black-color);
+    font-weight: bold;
+}
+
+.store-nav-item-icon {
+    padding: 0px 200px 174px 0px;
+}
+
+.color-gradient {
+    color: lightsalmon;
+}
+/* Main fourth and fifth accessories */
 
 .main-fourth-accessories,
 .main-fifth-additional-devices {
@@ -251,9 +279,17 @@ html {
 }
 
 .accessories-nav-item-header,
-.accessories-nav-item-footer {
+.accessories-nav-item-footer,
+.devices-nav-item-header {
     font-size: 28px;
     padding-bottom: 10px;
+    color: var(--black-color);
+}
+
+.accessories-nav-item-detail,
+.devices-nav-item-detail {
+    color: var(--black-color);
+    font-size: 17px;
 }
 
 .fourth-accessories-nav,
@@ -292,11 +328,18 @@ html {
 }
 
 .fourth-accessory-nav-box,
-.devices-nav-item-text-box {
+.devices-nav-item-text-box,
+.devices-nav-item-text-box-main {
     position: absolute;
     display: block;
     max-width: 260px;
     bottom: 30px;
+}
+
+.devices-nav-item-text-box-main {
+    top: 30px;
+    padding: 0px 30px;
+    max-width: 400px;
 }
 
 .nav-item-color {
@@ -317,17 +360,20 @@ html {
 }
 
 
-.accessories-nav-item-img {
+.accessories-nav-item-img,
+.additional-devices-nav-item-img {
     padding: 46px 30px 40px;
 }
 
-.nav-item-accessories-status {
+.nav-item-accessories-status,
+.nav-item-devices-status {
     display: block;
     font-size: 12px;
     color: #BF4800;
 }
 
-.accessories-nav-item-name {
+.accessories-nav-item-name,
+.devices-nav-item-name {
     font-size: 17px;
     font-weight: bold;
     min-height: 52px;
@@ -336,26 +382,195 @@ html {
     color: var(--black-color);
 }
 
-.accessories-nav-item-price {
+.accessories-nav-item-price,
+.devices-nav-item-price {
     font-size: 14px;
     color: #1D1D1F;
 }
 
-/* Main fifth additional devices */
-
-/* .main-fifth-additional-devices {
+/* Main sixth service */
+.sixth-services-nav,
+.main-special-stores-nav {
+    display: flex;
     padding-bottom: 54px;
 }
 
-.fifth-additional-devices-nav {
+.sixth-services-nav-item,
+.main-special-stores-nav-item {
+    position: relative;
+    display: block;
+    margin-right: 20px
+}
+
+.sixth-services-status,
+.sixth-services-nav-item-header,
+.sixth-services-nav-item-detail,
+.main-special-stores-status,
+.main-special-stores-nav-item-header {
+    position: absolute;
+    padding: 0px 30px;
+}
+
+.sixth-services-status,
+.main-special-stores-status {
+    padding-top: 30px;
+    font-size: 12px;
+    color: #6E6E73;
+}
+
+.sixth-services-nav-item-header,
+.main-special-stores-nav-item-header {
+    padding-top: 70px;
+    font-size: 28px;
+    color: var(--black-color);
+}
+
+.sixth-services-nav-item-detail {
+    padding-top: 100px;
+    font-size: 17px;
+    color: #1D1D1F;
+}
+
+.small-upper-word {
+    font-size: 65%;
+    position: relative;
+    top: -5px;
+    font-weight: bolder;
+}
+
+.item-header-white {
+    color: var(--white-color);!important
+}
+
+/* Quick links */
+.eight-text-quicklinks {
+    font-size: 28px;
+    padding: 0px 0px 20px;
+}
+
+.eighth-quicklinks-nav {
     display: flex;
 }
 
-.additional-devices-nav-item {
-    position: relative;
-    background-color: var(--white-color);
+.quicklinks-nav-button {
+    display: block;
+    text-decoration: none;
+    color: var(--black-color);
+    background-color: #E8E8ED;
+    border-radius: 22px;
+    padding: 8px;
+    margin: 10px;
+    font-size: 0px 14px 27px 0px;
 }
 
-.devices-nav-item-text-box {
-    position: absolute;
-} */
+.eight-quicklinks-explaination {
+    font-size: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 980px;
+    line-height: 16px;
+    color: #6E6E73;
+    padding: 12px 0px;
+}
+
+/* Footer */
+/* Fooder header */
+
+.footer-header {
+    padding: 0px 0px 12px;
+}
+
+.footer-line {
+    height: 1px;
+    background-color: #6E6E73;
+    width: 980px;
+    margin: 8px 0px 20px 0px;
+}
+
+.footer-header-position {
+    display: flex;
+}
+
+.header-position-icon {
+    color: #424245;
+}
+
+.fa-angle-right {
+    color: #424245;
+    position: relative;
+    bottom: -4px;
+    padding: 0px 10px;
+}
+
+.header-position-current {
+    font-size: 12px;
+    color: #424245;
+}
+
+/* footer nav  */
+.footer-nav {
+    display: inline-flex;
+    flex-wrap: wrap;
+    height: 415px;
+    max-width: 100%;
+    flex-direction: column;
+}
+
+.footer-unordered-list {
+    list-style: none;
+    width: 176px;
+    font-size: 12px;
+    margin-bottom: 14px;
+}
+
+.nav-about-header {
+    font-weight:bold;
+}
+
+.nav-about-list {
+    color: #424245;
+}
+
+/* footer more detail  */
+
+.footer-more-detail {
+    font-size: 12px;
+    color: #6E6E73;
+}
+
+.footer-legal-list {
+    display: inline-flex;
+    font-size: 12px;
+    padding: 0px 0px 20px 0px;
+}
+
+
+.legal-list-copyright {
+    color: #6E6E73;
+}
+
+.legal-list-nav {
+    display: flex;
+    list-style: none;
+    position: relative;
+    left: 20px;
+}
+
+.legal-list-nav-item,
+.legal-list-nav-item-noborder {
+    color: #424245;
+    padding: 0px 10px;
+}
+
+.legal-list-nav-item {
+    border-right: solid 1px #424245;
+}
+
+.hover-underline:hover {
+    text-decoration: underline;
+}
+
+.vietnam {
+    position: relative;
+    left: 250px;
+    color: #424245;
+}
