@@ -245,68 +245,80 @@ html {
 
 /* Main fourth accessories */
 
-
-.fourth-accessories-nav {
-    display: flex;
-    
-}
-
-.fourth-accessories-nav-box {
-    position: relative;
-    display: block;
-    bottom: 0px;
-}
-
-.accessories-nav-item-main,
-.accessories-nav-item-footer {
-    position: absolute;
-}
-
-.accessories-nav-item {
-    position: relative;
-    display: block;
-    padding: 30px;
-    max-height: 500px;
+.main-fourth-accessories,
+.main-fifth-additional-devices {
+    padding: 0px 0px 54px;
 }
 
 .accessories-nav-item-header,
 .accessories-nav-item-footer {
     font-size: 28px;
+    padding-bottom: 10px;
 }
 
-.accessories-nav-item-img {
-    padding-top: 41px;
+.fourth-accessories-nav,
+.fifth-additional-devices-nav {
+    display: flex;
+}
+
+.fourth-accessories-nav-box,
+.accessories-nav-item,
+.additional-devices-nav-item,
+.additional-devices-nav-item-main {
+    position: relative;
+    margin-right: 20px;
+    max-height: 500px;
+}
+
+.accessories-nav-item,
+.additional-devices-nav-item {
+    width: 313px;
+    width: 100%;
     display: block;
-    width: 230px;
-    height: auto;
+    padding: 30px;
+    background-color: var(--white-color);
 }
 
-.fourth-accessory-nav-box {
+.accessories-nav-item-main {
+    position: absolute;
+    padding: 30px;
+    color: var(--black-color);
+}
+
+.nav-item-color {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.fourth-accessory-nav-box,
+.devices-nav-item-text-box {
     position: absolute;
     display: block;
-    bottom: 0px;
-    height: 168px;
-    padding: 20px 0px 0px;
-    margin-right: 30px;
+    max-width: 260px;
+    bottom: 30px;
 }
 
 .nav-item-color {
     padding: 19px 0px 14px;
-    justify-content: center;
     display: flex;
+    width: 100%;
+    max-width: 260px;
 }
 
 .nav-item-color-dot {
-    float: right;
     list-style: none;
-    display: block;
 }
 
 .color-dot-img {
     max-height: 12px;
     display: flex;
     padding: 0px 3px;
+}
 
+
+.accessories-nav-item-img {
+    padding: 46px 30px 40px;
 }
 
 .nav-item-accessories-status {
@@ -319,11 +331,31 @@ html {
     font-size: 17px;
     font-weight: bold;
     min-height: 52px;
+    display: flex;
+    align-self: flex-start;
+    color: var(--black-color);
 }
 
 .accessories-nav-item-price {
     font-size: 14px;
     color: #1D1D1F;
-    margin: 27px 0px 0px;
 }
-/* footer nav */
+
+/* Main fifth additional devices */
+
+/* .main-fifth-additional-devices {
+    padding-bottom: 54px;
+}
+
+.fifth-additional-devices-nav {
+    display: flex;
+}
+
+.additional-devices-nav-item {
+    position: relative;
+    background-color: var(--white-color);
+}
+
+.devices-nav-item-text-box {
+    position: absolute;
+} */
