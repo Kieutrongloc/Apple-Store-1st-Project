@@ -15,7 +15,6 @@ html {
     line-height: 1.6rem;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #F5F5F7;
-    min-width: 1000px;
 }
 
 /* CSS IN GENERAL */
@@ -39,7 +38,7 @@ html {
 }
 
 .overflow-hidden {
-    overflow: hidden;
+   overflow: hidden;
 }
 /* HEADER */
 
@@ -48,16 +47,14 @@ html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: var(--white-color);
     padding: 8px;
-    margin: -26px 0px 0px -200px;
     background-color: #313132;
 }
 
 #header-nav {
     display: flex;
     justify-content: space-between;
-    width: 1000px;
-    position: relative;
-    left: 200px;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .nav-items {
@@ -81,10 +78,11 @@ html {
 }
 
 .section-nav-row {
-    display:flex;
+    display: flex;
     justify-content: space-between;
     padding: 64px 0 64px 0px;
     max-width: 1000px;
+    margin: auto;
 }
 
 .header-content {
@@ -128,7 +126,8 @@ html {
 }
 
 .section-nav-devices-list {
-    display: flex
+    display: flex;
+    margin: 0 auto;
 }
 
 .device-photo {
@@ -516,10 +515,10 @@ html {
 
 /* footer nav  */
 .footer-nav {
-    display: inline-flex;
+    display: flex;
     flex-wrap: wrap;
-    height: 415px;
-    max-width: 100%;
+    max-width: fit-content;
+    height: 430px;
     flex-direction: column;
 }
 
