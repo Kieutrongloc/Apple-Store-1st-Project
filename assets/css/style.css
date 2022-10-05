@@ -55,8 +55,8 @@ html {
 .main-eighth-special-stores,
 .main-eighth-quicklinks,
 .global-footer  {
-    max-width: 1000px;
-    margin: auto;
+    /* max-width: 1000px;
+    margin: auto; */
 }
 /* HEADER */
 
@@ -84,6 +84,71 @@ html {
     color: var(--white-color);
     font-size: 12px;
     /* padding: 0 2rem; */
+}
+
+#nav-icons-bag:hover {
+    cursor: pointer;
+}
+
+.subnav-line-through {
+    position: relative;
+    top: 44px;
+    height: 1px;
+    border-bottom: solid 1px #6E6E73;
+}
+
+#subnav-cart-checkout {
+    background-color: var(--white-color);
+    border-radius: 10px;
+    padding: 20px 20px 0;
+    position: absolute;
+    border: solid 1px var(--brown-color);
+    width: 286px;
+    left: -136px;
+    top: 46px;
+    display: none;
+}
+
+.subnav-number-of-items {
+    color: #6E6E73;
+    text-align: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.subnav-select-list {
+    list-style: none;
+}
+
+.subnav-checkout {
+    border-radius: 8px;
+    font-size: 17px;
+    color: var(--white-color);
+    background-color: #0071E3;
+    padding: 10px;
+    width: 246px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+.subnav-select-list {
+    border-bottom: solid 1px #c3c3d6;
+    padding: 16px 0px 16px;
+}
+
+.subnav-select-list-last {
+    padding: 16px 0px 16px;
+}
+
+.subnav-list-address {
+    text-decoration: none;
+    color: #06c;
+    font-size: 16px;
+}
+
+.subnav-list-icon {
+    font-size: 16px;
+    padding: 0px 16px 0px 0px
 }
 
 /* SECTION */
@@ -172,9 +237,6 @@ html {
     color: var(--black-color);
 }
 
-.device-name:hover {
-    text-decoration: underline;
-}
 /* MAIN */
 /* Main first top devices */
 
@@ -460,7 +522,7 @@ html {
 }
 
 .item-header-white {
-    color: var(--white-color);!important
+    color: var(--white-color);
 }
 
 /* Quick links */

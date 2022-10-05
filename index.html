@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/font/themify-icons/Themify IconFonts 5-23-2014.json">
-    <link rel="stylesheet" href="assets/font/fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/font/fontawesome-free-6.2.0-web/css/all.css">
 </head>
 <div>
     <!-- HEADER -->
     <header>
-        <div class="header">
+        <div class="header" id="header">
             <ul id="header-nav" class="none-address-style">
                 <li><a href="" class="nav-icons"><i class="fa-brands fa-apple"></i></a></li>
                 <li><a href="" class="nav-items">Store</a></li>
@@ -29,7 +29,31 @@
                 <li><a href="" class="nav-items">Accessories</a></li>
                 <li><a href="" class="nav-items">Support</a></li>
                 <li><a href="" class="nav-icons"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                <li><a href="" class="nav-icons"><i class="fa-solid fa-suitcase"></i></a></li>
+                <li style="position: relative;"><div href="" class="nav-icons" id="nav-icons-bag" onclick="showSubnav()"><i class="fa-solid fa-suitcase"></i></div>
+                    <div id="subnav-cart-checkout">
+                        <div class="subnav-item-list"></div>
+                        <div class="subnav-line-through"></div>
+                        <p class="subnav-number-of-items">items in your Bag</p>
+                        <a href="" class="subnav-checkout">Check out</a>
+                        <ul class="subnav-checkout-list">
+                            <li class="subnav-select-list"><a href="" class="subnav-list-address hover-underline">
+                                <i class="subnav-list-icon fa-solid fa-suitcase"></i>Bag
+                            </a></li>
+                            <li class="subnav-select-list"><a href="" class="subnav-list-address hover-underline">
+                                <i class="subnav-list-icon fa-solid fa-tag"></i>Saved Items
+                            </a></li>
+                            <li class="subnav-select-list"><a href="" class="subnav-list-address hover-underline">
+                                <i class="subnav-list-icon fa-solid fa-box"></i>Orders
+                            </a></li>
+                            <li class="subnav-select-list"><a href="" class="subnav-list-address hover-underline">
+                                <i class="subnav-list-icon fa-solid fa-gear"></i>Account
+                            </a></li>
+                            <li class="subnav-select-list-last"><a href="" class="subnav-list-address hover-underline">
+                                <i class="subnav-list-icon fa-solid fa-user"></i>Sign out
+                            </a></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
         </div>
     </header>
@@ -64,61 +88,61 @@
                    <div class="devices-list-items">
                     <div class="items-detail">
                         <a href=""> <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-mac-nav-202203?wid=200&hei=130&fmt=png-alpha&.v=1645051958490" alt="" class="device-photo"></a>
-                        <a href="" class="device-name none-address-style">Mac</a>
+                        <a href="" class="device-name hover-underline none-address-style">Mac</a>
                     </div>
                    </div>
                    <div class="devices-list-items">
                     <div class="items-detail">
                         <a href=""> <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-iphone-nav-202209_GEO_US?wid=200&hei=130&fmt=png-alpha&.v=1661027785546" alt="" class="device-photo"></a>
-                        <a href="" class="device-name none-address-style">iPhone</a>
+                        <a href="" class="device-name hover-underline none-address-style">iPhone</a>
                     </div>
                    </div>
                    <div class="devices-list-items">
                     <div class="items-detail">
                         <a href=""> <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-ipad-nav-202108?wid=200&hei=130&fmt=png-alpha&.v=1625783381000" alt="" class="device-photo"></a>
-                        <a href="" class="device-name none-address-style">iPad</a>
+                        <a href="" class="device-name hover-underline none-address-style">iPad</a>
                     </div>
                    </div>
                    <div class="devices-list-items">
                     <div class="items-detail">
                         <a href=""> <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-watch-nav-202209?wid=200&hei=130&fmt=png-alpha&.v=1661796454103" alt="" class="device-photo"></a>
-                        <a href="" class="device-name none-address-style">Apple Watch</a>
+                        <a href="" class="device-name hover-underline none-address-style">Apple Watch</a>
                     </div>
                    </div>
                    <div class="devices-list-items">
                     <div class="items-detail">
                         <a href=""> <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-airpods-nav-202209?wid=200&hei=130&fmt=png-alpha&.v=1660676485885" alt="" class="device-photo"></a>
-                        <a href="" class="device-name none-address-style">Airpods</a>
+                        <a href="" class="device-name hover-underline none-address-style">Airpods</a>
                     </div>
                    </div>
                    <div class="devices-list-items">
                     <div class="items-detail">
                         <a href=""> <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-airtags-nav-202108?wid=200&hei=130&fmt=png-alpha&.v=1625783380000" alt="" class="device-photo"></a>
-                        <a href="" class="device-name none-address-style">AirTag</a>
+                        <a href="" class="device-name hover-underline none-address-style">AirTag</a>
                     </div>
                    </div>
                    <div class="devices-list-items">
                     <div class="items-detail">
                         <a href=""> <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-appletv-nav-202108?wid=200&hei=130&fmt=png-alpha&.v=1625783378000" alt="" class="device-photo"></a>
-                        <a href="" class="device-name none-address-style">Apple TV</a>
+                        <a href="" class="device-name hover-underline none-address-style">Apple TV</a>
                     </div>
                    </div>
                    <div class="devices-list-items">
                     <div class="items-detail">
                         <a href=""> <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-homepod-nav-202110?wid=200&hei=130&fmt=png-alpha&.v=1633355783000" alt="" class="device-photo"></a>
-                        <a href="" class="device-name none-address-style">HomePod mini</a>
+                        <a href="" class="device-name hover-underline none-address-style">HomePod mini</a>
                     </div>
                    </div>
                    <div class="devices-list-items">
                     <div class="items-detail">
                         <a href=""> <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-accessories-nav-202209?wid=200&hei=130&fmt=png-alpha&.v=1660677092974" alt="" class="device-photo"></a>
-                        <a href="" class="device-name none-address-style">Accessories</a>
+                        <a href="" class="device-name hover-underline none-address-style">Accessories</a>
                     </div>
                    </div>
                    <div class="devices-list-items">
                     <div class="items-detail">
                         <a href=""> <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/store-card-13-holiday-giftcards-asit-agc-nav-202111?wid=200&hei=130&fmt=png-alpha&.v=1653339351054" alt="" class="device-photo"></a>
-                        <a href="" class="device-name none-address-style">Apple Gift Card</a>
+                        <a href="" class="device-name hover-underline none-address-style">Apple Gift Card</a>
                     </div>
                    </div>
                 </div>
@@ -630,6 +654,6 @@
             </div>
         </div>
     </footer>
-
+<script src="main.js"></script>
 </body>
 </html>
