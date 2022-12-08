@@ -23,4 +23,4 @@ function run(object) {
     }
     return arr;
 }
-console.log(run({ name: 'Nguyen Van A', age: 16 }));
+console.log(run({ name: 'Nguyen Van A', age: 16 })); fghgh
