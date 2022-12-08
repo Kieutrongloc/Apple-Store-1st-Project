@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="stylesheet" href="main.js">
+    <!-- <link rel="stylesheet" href="main.js"> -->
     <link rel="stylesheet" href="assets/font/themify-icons/Themify IconFonts 5-23-2014.json">
     <link rel="stylesheet" href="assets/font/fontawesome-free-6.2.0-web/css/all.css">
 </head>
@@ -32,9 +32,21 @@
                 <li><a href="" class="nav-icons"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                 <li style="position: relative;"><div href="" class="nav-icons" id="nav-icons-bag" onclick="showSubnav()"><i class="fa-solid fa-suitcase"></i></div>
                     <div id="subnav-cart-checkout">
-                        <div class="subnav-item-list"></div>
+                        <div style="display: flex;justify-content: space-evenly;" class="subnav-item-list">
+                            <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/homepod-mini-select-blue-202110?wid=200&hei=200&fmt=jpeg&qlt=95&.v=1632925511000" alt="" class="checkout-item-img">
+                            <div class="cart-checkout-item-list">
+                                <div style="display: flex;">
+                                   <p style="color:black" class="checkout-item-name">HomePod mini - Blue</p>
+                                </div>
+                                <div style="display: flex;justify-content: space-between;">
+                                    <input style="max-width: 40px;" type="number" value="1" min="0" class="checkout-item-qtt">
+                                    <p style="color:black" class="checkout-item-price"><span>$</span><span>120</span></p>
+                                </div>
+                            </div>
+                            <p style="color:red;padding: 20px 0px;" class="check-item-remove">Remove</p>
+                        </div>
                         <div class="subnav-line-through"></div>
-                        <p class="subnav-number-of-items">items in your Bag</p>
+                        <p class="subnav-checkout-total">Total: <span>$</span><span>120</span></p>
                         <a href="" class="subnav-checkout">Check out</a>
                         <ul class="subnav-checkout-list">
                             <li class="subnav-select-list"><a href="" class="subnav-list-address hover-underline">
