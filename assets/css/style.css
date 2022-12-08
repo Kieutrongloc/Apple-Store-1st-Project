@@ -55,8 +55,8 @@ html {
 .main-eighth-special-stores,
 .main-eighth-quicklinks,
 .global-footer  {
-    /* max-width: 1000px;
-    margin: auto; */
+    max-width: 1000px;
+    margin: auto;
 }
 /* HEADER */
 
@@ -97,6 +97,8 @@ html {
     border-bottom: solid 1px #6E6E73;
 }
 
+/* CART CHECKOUT */
+
 #subnav-cart-checkout {
     background-color: var(--white-color);
     border-radius: 10px;
@@ -106,10 +108,16 @@ html {
     width: 286px;
     left: -136px;
     top: 46px;
-    display: none;
+    display: block;
 }
 
-.subnav-number-of-items {
+.checkout-item-img {
+    width: 80px;
+    height: 80px;
+}
+
+
+.subnav-checkout-total {
     color: #6E6E73;
     text-align: center;
     padding: 20px 0px 20px 0px;
@@ -336,6 +344,7 @@ html {
     padding: 30px;
     position: relative;
     margin: 0px 20px 54px 0px;
+    background-color: var(--white-color);
 }
 
 .store-nav-item-detail {
