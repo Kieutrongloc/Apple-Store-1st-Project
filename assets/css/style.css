@@ -109,6 +109,7 @@ html {
     left: -136px;
     top: 46px;
     display: block;
+    z-index: 1;
 }
 
 .checkout-item-img {
