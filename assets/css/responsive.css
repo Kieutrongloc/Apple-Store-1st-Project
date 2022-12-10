@@ -27,7 +27,7 @@
     }
 
    #header-nav {
-    display: none;
+    display: flex;
     flex-direction: column;
    }
 
