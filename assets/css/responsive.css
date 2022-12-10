@@ -1,0 +1,37 @@
+/* PC  */
+@media (min-width: 64em) {
+
+}
+
+/* Tablet */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+   
+}
+
+/* Mobile  */
+@media (max-width: 46.1875em) {
+    #header-nav,
+    .section-nav-row,
+    .section-nav-devices-list,
+    .main-first-top-devices,
+    .main-second-support,
+    .main-third-store,
+    .main-fourth-accessories,
+    .main-fifth-additional-devices,
+    .main-sixth-services,
+    .main-eighth-special-stores,
+    .main-eighth-quicklinks,
+    .global-footer  {
+        max-width: 350px;
+        margin: auto;
+    }
+
+   #header-nav {
+    display: flex;
+    flex-direction: column;
+   }
+
+   
+
+
+}

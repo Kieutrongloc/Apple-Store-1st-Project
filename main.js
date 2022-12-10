@@ -1,5 +1,5 @@
 // HIDE/UNHIDE CARD CHECKOUT
-function showSubnav() {
+function showSubnav(event) {
     var x = document.getElementById("subnav-cart-checkout");
     if (x.style.display === "none") {
       x.style.display = "block";
@@ -7,6 +7,7 @@ function showSubnav() {
       x.style.display = "none";
     }
   }
+
 
 // SELECT VALUE TO CART BUTTON
 const btn = document.querySelectorAll("i.nav-item-add")
@@ -28,17 +29,17 @@ button.addEventListener("click",function(event){{
 function addcart(productImg, productName,productPrice,productPriceNumber) {
   var addtr = document.createElement("div")
   var cartItem = document.querySelectorAll(".subnav-item-list")
+  // addtr.classList.add("subnav-item-list")
   
   for (var i=0;i<cartItem.length;i++) {
     var productNewAdd = document.querySelectorAll(".checkout-item-name")
     var productQuantity = document.querySelector(".checkout-item-qtt").value
-    console.log(productQuantity)
+    // console.log(productQuantity)
     if (productNewAdd[i].innerHTML == productName) {
-      alert("The items has been in your cart already") 
+      alert(""+productName+" has been added already. Please update the quantity in your cart!") 
       return
     }
   }
-  addtr.classList.add("subnav-item-list")
 
   var trcontent = '<div style="display: flex;justify-content: space-between;padding-bottom: 10px;" class="subnav-item-list"><img src="'+productImg+'" alt="" class="checkout-item-img"><div class="cart-checkout-item-list"><div style="display: flex;"><p style="color:black" class="checkout-item-name">'+productName+'</p></div><div style="display: flex;justify-content: space-between;"><input style="max-width: 40px;" type="number" value="1" min="1" class="checkout-item-qtt"><p style="color:black" class="checkout-item-price"><span>$</span><span class="checkout-item-pricenumber">'+productPriceNumber+'</span><span>.00</span></p></div></div><p style="color:red;margin: 20px 0px;cursor: pointer;" class="checkout-item-remove">Remove</p></div>'
 
@@ -46,6 +47,7 @@ function addcart(productImg, productName,productPrice,productPriceNumber) {
   var cartTable = document.querySelector(".cart-checkout-table-item")
   cartTable.append(addtr)
   cartTotal()
+  deleteCart()
 }
 
 // CACULATE TOTAL PRICE/REMOVE ITEM
@@ -59,34 +61,66 @@ function cartTotal (){
     var productPrice = cartItem[i].querySelector(".checkout-item-pricenumber").innerHTML
     var totalPriceUnit = inputValue*productPrice
     totalPriceCart = totalPriceCart + totalPriceUnit
+    inputChange()
+    bagQuanity()
   }
   var cartTotal = document.querySelector(".subnav-checkout-total-number")
   cartTotal.innerHTML = "Total: $" + totalPriceCart +".00"
   
-  // (CACULATE TOTAL ITEMS AT BAG)
-  // var cartItemQuantity = document.querySelector(".checkout-quantity")
-  // cartItemQuantity.innerHTML = " (" + cartItem.length + ")"
-  // console.log(cartItem.length)
 }
+
+
+ // (CACULATE TOTAL ITEMS AT "BAG")
+ function bagQuanity() {
+   var cartItem = document.querySelectorAll(".cart-checkout-item-list")
+   var cartItematbag = document.querySelector(".cart-quantity-at-bag")
+   var productQuantity = 0
+   for (var i=0;i<cartItem.length;i++) {
+    var cartItemQuantity = document.querySelector(".checkout-quantity")
+   var inputValue = Number(cartItem[i].querySelector("input").value)
+   productQuantity = inputValue + productQuantity
+  //  console.log(typeof inputValue)
+   cartItemQuantity.innerHTML = " (" + productQuantity + ")"
+   cartItematbag.innerHTML = productQuantity
+   }
+   inputChange()
+ }
 
 
 // Delete item from checkout cart
 function deleteCart() {
   var cartItem = document.querySelectorAll(".subnav-item-list")
   for (var i=0;i<cartItem.length;i++) {
-    var productItem = document.querySelectorAll(".checkout-item-remove")
-    productItem[i].addEventListener("click",function(event) {
-      var cartRemove = event.target
-      var cartItemRemove = cartRemove.parentElement
+    var removeButton = document.querySelectorAll(".checkout-item-remove")
+    removeButton[i].addEventListener("click",function(event){
+      var cartDelete = event.target
+      var cartItemRemove = cartDelete.parentElement
+      cartItemRemove.remove()
+      cartTotal()
       // console.log(cartItemRemove)
+    })   
+  }
+}
 
+function inputChange() {
+  var cartItem = document.querySelectorAll(".subnav-item-list")
+  for (var i=0;i<cartItem.length;i++) {
+    var inputValue = cartItem[i].querySelector("input")
+    inputValue.addEventListener("change",function(){
+      cartTotal()
     })
   }
-  
 }
 
 
+//Query:
+// Tai sao phai them bagQuantity vao function cartTotal?
+// 
 
+
+
+
+// REFERENCE
 // + Ngay sau khi tạo <tr>  mới trong <tbody>
 //    nên add ngay event "Click" cho button Xóa trong  <tr> mới tạo ra, như thế đỡ tạo lại vòng lập check thẻ <tr>  ?
 //   ============================
