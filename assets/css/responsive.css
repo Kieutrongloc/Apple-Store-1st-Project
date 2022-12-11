@@ -22,8 +22,8 @@
     .main-eighth-special-stores,
     .main-eighth-quicklinks,
     .global-footer  {
-        max-width: 350px;
-        margin: auto;
+        /* max-width: 350px; */
+        /* margin: auto; */
     }
 
    #header-nav {

@@ -113,11 +113,6 @@ function inputChange() {
 }
 
 
-//Query:
-// Tai sao phai them bagQuantity vao function cartTotal?
-// 
-
-
 
 
 // REFERENCE

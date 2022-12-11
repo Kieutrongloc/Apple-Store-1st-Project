@@ -32,6 +32,7 @@ html {
 
 .hover-style {
     transition: transform .5s ease;
+    margin: 4px 0px;
 }
 
 .hover-style:hover {
@@ -39,7 +40,8 @@ html {
 }
 
 .overflow-hidden {
-    /* overflow-x: hidden; */
+    overflow: auto;
+    /* overflow-y: visible; */
 }
 
 
