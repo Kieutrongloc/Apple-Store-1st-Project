@@ -10,6 +10,37 @@
 
 /* Mobile  */
 @media (max-width: 46.1875em) {
+
+    .nav-res-pchide {
+        display: flex;
+    }
+
+    .nav-res-mobile-show-appleicon {
+        display: flex;
+        align-self: center;
+        position: absolute;
+    }
+
+    .nav-res-mobile-show-bag {
+        display: flex;
+        position: absolute !important;
+        align-self: flex-end;
+    }
+    .nav-res-mobile-hide {
+        display: none;
+        /* transition: all .5s ease; */
+    }
+
+    #subnav-cart-checkout {
+        position: absolute;
+        margin: 0px -130px;
+    }
+
+
+    .nav-row-chat-title {
+        line-height: 16px;
+    }
+
     #header-nav,
     .section-nav-row,
     .section-nav-devices-list,
@@ -22,9 +53,18 @@
     .main-eighth-special-stores,
     .main-eighth-quicklinks,
     .global-footer  {
-        max-width: 350px;
+        max-width: 400px;
         margin: auto;
     }
+
+    .support-detail-nav,
+    .eight-quicklinks-explaination,
+    .global-footer {
+        overflow: auto;
+        max-width: 400px;
+        margin: auto;
+    }
+
 
    #header-nav {
     display: flex;

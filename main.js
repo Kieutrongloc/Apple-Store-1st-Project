@@ -1,3 +1,15 @@
+// HIDE/UNHIDE NAV MENU IN MOBILE RESPONSIVE (NOT DONE)
+function showNavmenu() {
+  var x = document.querySelectorAll(".nav-res-mobile-hide");
+  for (var i=0;i<x.length;i++) {
+  if (x[i].style.display === "none") {
+    x[i].style.display = "block";
+  } else {
+    x[i].style.display = "none";
+  }}
+}
+
+
 // HIDE/UNHIDE CARD CHECKOUT
 function showSubnav(event) {
     var x = document.getElementById("subnav-cart-checkout");
