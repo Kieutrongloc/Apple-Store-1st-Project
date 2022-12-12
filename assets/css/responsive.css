@@ -5,7 +5,21 @@
 
 /* Tablet */
 @media (min-width: 46.25em) and (max-width: 63.9375em) {
-   
+    #header-nav,
+    .section-nav-row,
+    .section-nav-devices-list,
+    .main-first-top-devices,
+    .main-second-support,
+    .main-third-store,
+    .main-fourth-accessories,
+    .main-fifth-additional-devices,
+    .main-sixth-services,
+    .main-eighth-special-stores,
+    .main-eighth-quicklinks,
+    .global-footer  {
+        max-width: 100%;
+        margin: auto;
+    }
 }
 
 /* Mobile  */
