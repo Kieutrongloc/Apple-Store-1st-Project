@@ -43,6 +43,9 @@ html {
     /* overflow-y: visible; */
 }
 
+.overflow-hidden::-webkit-scrollbar {
+    display: none;
+  }
 
 #header-nav,
 .section-nav-row,
